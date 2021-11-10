@@ -158,15 +158,17 @@ public class WorkingWithNumbers {
     які резервують память, тому при достатньо великій глибині рекурсії обсяг памяті зростає
     пропорціонально глибині рекурсії, у той час як при використанні циклу такої проблеми немає
     при кожній ітерації використовуються ті самі змінні.
+
+    видалив сміття, створив нову гілку на гітхабі
     */
     public static void main(String[] args) {
+        int addNewVarTomakeAnotherBranch;
         fillArrayCycle();
         System.out.println("Here is your array created with cycle");
         printArray();
         System.out.println("And another array created with recursion");
         fillArrayRec(0);
         printArray();
-
         System.out.printf("This is cycle, max number %d, min number %d, average number %.2f, sum of all %d",
                 maxNumberCycle(), minNumberCycle(), averageCycle(), sumArrayCycle());
         System.out.printf("\nThis is recursion, max number %d, min number %d, average number %.2f, sum of all %d",
