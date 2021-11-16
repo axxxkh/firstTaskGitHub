@@ -16,8 +16,8 @@ public class Computer {
             computersDatabase[i].computerNumber = i + 1;
             computersDatabase[i].globalAdressOfTheComputer = (int) (Math.random() * 10000000);
         }
-        for (int i = 0; i < computersDatabase.length; i++) {
-            System.out.println(computersDatabase[i].computerNumber + " " + computersDatabase[i].globalAdressOfTheComputer);
+        for (Computer computer : computersDatabase) {
+            System.out.println(computer.computerNumber + " " + computer.globalAdressOfTheComputer);
         }
     }
 }
