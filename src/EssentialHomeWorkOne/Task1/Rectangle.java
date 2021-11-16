@@ -1,4 +1,4 @@
-package EssentialHomeWorkOne;
+package EssentialHomeWorkOne.Task1;
 
 import java.util.Scanner;
 
@@ -7,12 +7,12 @@ public class Rectangle {
     public double sideTwoRectangle;
     public Scanner input = new Scanner(System.in);
 
-    public double areaCalculator(double side1, double side2) {
-        return side1 * side2;
+    public double areaCalculator(double sideOneRectangle, double sideTwoRectangle) {
+        return sideOneRectangle * sideTwoRectangle;
     }
 
-    public double perimetrCalculator(double side1, double side2) {
-        return (side1 + side2) * 2;
+    public double perimetrCalculator(double sideOneRectangle, double sideTwoRectangle) {
+        return (sideOneRectangle + sideTwoRectangle) * 2;
     }
 
     public void main(String[] args) {
